@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>StudyView · 本地公式阅读器</title>
+  <link rel="stylesheet" href="/vendor/katex.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/vendor/katex.min.js"></script>
+  <script defer src="/vendor/marked.min.js"></script>
+  <script defer src="/vendor/purify.min.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header><a href="/" class="brand">StudyView <span>本地阅读</span></a><div class="controls"><label><input id="follow" type="checkbox"> 跟随最新内容</label><button id="theme" type="button">切换明暗</button><button id="copy" type="button">复制原文</button></div></header>
+  <div class="meta"><span id="status" role="status">正在读取内容…</span><span>content.md · 自动更新</span></div>
+  <main id="content" aria-label="讲解内容"></main>
+  <footer>在终端与 Codex 交流，在这里阅读。支持 Markdown 与 LaTeX。</footer>
+</body>
+</html>
